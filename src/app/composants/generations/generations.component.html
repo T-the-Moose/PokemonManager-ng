@@ -1,1 +1,16 @@
-<p>{{ message2 }}</p>
+<body>
+  <h1>{{ message1 }}</h1>
+  <hr>
+  <h2>{{ message2 }}</h2>
+
+  <div>
+    <ul>
+      <li class="listeGen" *ngFor="let g of generations">
+        <a>
+          {{ g }}
+        </a>
+      </li>
+    </ul>
+  </div>
+
+</body>

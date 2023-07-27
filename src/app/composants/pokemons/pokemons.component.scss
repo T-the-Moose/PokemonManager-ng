@@ -1,0 +1,29 @@
+body {
+  font-family: 'Trebuchet MS', sans-serif;
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+}
+
+.Pokemon {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.listePok {
+  list-style-type: none;
+  margin: 3em 3em 3em 7em;
+  padding: 4em;
+  border: solid black;
+  border-bottom-right-radius: 20%;
+  border-top-left-radius: 20%;
+}
+
+.caract {
+  border-left: solid grey 1px;
+  padding-left: 2em;
+}
+
+

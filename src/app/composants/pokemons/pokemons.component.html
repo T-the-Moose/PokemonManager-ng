@@ -1,1 +1,21 @@
-<h1>{{ message }}</h1>
+<body>
+
+  <h1>{{ message }}</h1>
+
+  <div>
+    <ul class="Pokemon">
+      <li class="listePok" *ngFor="let pokemon of pokemons">
+        <div>
+          <strong>Nom:</strong> {{ pokemon.nom }}<br>
+        </div>
+        <p>
+          <strong class="caract">Types:</strong> {{ pokemon.type.join(', ') }}<br>
+          <strong class="caract">Taille:</strong> {{ pokemon.taille }}<br>
+          <strong class="caract">Poids:</strong> {{ pokemon.poids }}
+        </p>
+      </li>
+    </ul>
+  </div>
+
+</body>
+

@@ -1,13 +1,15 @@
+<head>
+  <link href="https://fonts.cdnfonts.com/css/pokemon-solid" rel="stylesheet">
+</head>
 <body>
   <h1>{{ message1 }}</h1>
-  <hr>
   <h2>{{ message2 }}</h2>
 
   <div>
-    <ul>
-      <li class="listeGen" *ngFor="let g of generations">
+    <ul class="generation">
+      <li class="listeGen" >
         <a>
-          {{ g }}
+
         </a>
       </li>
     </ul>

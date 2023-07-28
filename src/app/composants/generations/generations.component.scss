@@ -1,14 +1,32 @@
 body {
-  font-family: 'Trebuchet MS', sans-serif;
+  font-family: 'Pokemon Solid', sans-serif;
+  background-image:url("../img/banniere.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #f7c505;
+  text-shadow: #345fa7 -5px -5px 2px;
+  letter-spacing: 3px;
 }
 
 h1 {
   display: flex;
   justify-content: center;
+  font-size: 3em;
+}
+
+h2 {
+  padding-left: 1em;
+  font-size: 1.5em;
 }
 
 .listeGen {
   list-style-type: none;
   margin: 10px;
+  font-size:  1.5em;
 }
 
+.generation {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}

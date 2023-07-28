@@ -1,21 +1,29 @@
+<head>
+  <link href="https://fonts.cdnfonts.com/css/pokemon-solid" rel="stylesheet">
+</head>
 <body>
-
   <h1>{{ message }}</h1>
+  <h2>{{ message2 }}</h2>
 
-  <div>
+  <!-- pokemon$ est un observable -->
+  <div *ngIf="pokemons$ | async as pokemon">
     <ul class="Pokemon">
-      <li class="listePok" *ngFor="let pokemon of pokemons">
+      <li class="listePok">
         <div>
-          <strong>Nom:</strong> {{ pokemon.nom }}<br>
+          <strong>Nom:</strong> {{ pokemon.name }}<br>
         </div>
-        <p>
-          <strong class="caract">Types:</strong> {{ pokemon.type.join(', ') }}<br>
-          <strong class="caract">Taille:</strong> {{ pokemon.taille }}<br>
-          <strong class="caract">Poids:</strong> {{ pokemon.poids }}
-        </p>
-      </li>
-    </ul>
-  </div>
+
+       <div class="imgPoke">
+         <img class="imgPoke" src="{{ pokemon.sprites.front_default }}" alt="Pokemon"/>
+       </div>
+       <p>
+         <strong class="caract">Type:</strong><span>{{ pokemon.type }}</span><br>
+         <strong class="caract">Taille:</strong><span>{{ pokemon.height }} centimères</span><br>
+         <strong class="caract">Poids:</strong><span>{{ pokemon.weight }} kilogrammes</span>
+       </p>
+     </li>
+   </ul>
+ </div>
 
 </body>
 
